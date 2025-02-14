@@ -2,7 +2,7 @@
 
 # AI From Scratch
 
-Building AI from scratch using Python. (and simple libraries like numpy and math)
+Building ML models from scratch using Python. (and simple libraries like numpy and math)
 
 ## Projects
 
