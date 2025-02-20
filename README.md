@@ -12,12 +12,11 @@ Building ML models from scratch using Python. (and simple libraries like numpy a
 
 ## Getting Started
 
-To get started with any of these projects, simply clone the repository and run the desired Python file.
+To get started with any of these projects, simply clone the repository.
 
 ```bash
 git clone https://github.com/YassWorks/AI-From-Scratch.git
 cd AI-From-Scratch
-python LinearRegression.py
 ```
 
 ## Requirements
