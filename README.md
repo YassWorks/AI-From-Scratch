@@ -8,7 +8,7 @@ Building ML models from scratch using Python. (and simple libraries like numpy a
 
 - **LinearRegression.py**: linear regression model with multiple variables.
 - **UnivariateLinearRegression.py**: linear regression model with a single variable.
-- **KMeans.py**: clustering algorithm for partitioning data into k clusters.
+- **KMeans.py**: clustering algorithm for partitioning data into K clusters.
 - **CrossValidation.py**: evaluate the performance of machine learning models.
 
 ## Getting Started
