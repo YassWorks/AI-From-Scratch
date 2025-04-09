@@ -44,26 +44,3 @@ class LinearRegression:
         # update w and b
         self.w -= self.lr * dw
         self.b -= self.lr * db
-
-
-# # example usage
-# def main():
-#     from Tools.CrossValidation import CrossValidate
-#     # create dummy data
-#     np.random.seed(0)
-#     x = np.random.rand(1000, 18)
-#     w = np.random.randn(18, 1)
-#     b = np.random.randn(1000, 1)
-#     y = np.dot(x, w) + b
-
-#     model = LinearRegression()
-#     cv = CrossValidate(folds=5)
-
-#     # get the score of the model
-#     score = cv.get_score(model, x, y)
-#     print("-"*30)
-#     print("My score:", score)
-#     print("-"*30)
-    
-# if __name__ == "__main__":
-#     main()

@@ -1,6 +1,6 @@
 import numpy as np
 
-class CrossValidate:
+class CrossValidation:
     
     def __init__(self, folds=5, random_state=0):
         np.random.seed(random_state)
