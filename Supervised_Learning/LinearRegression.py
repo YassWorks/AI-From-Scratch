@@ -2,7 +2,7 @@ import numpy as np
 
 class LinearRegression:
 
-    def __init__(self, random_state=0, w=None, b=None, lr=1e-22):
+    def __init__(self, random_state=0, w=None, b=None, lr=0.001):
         np.random.seed(random_state)
         self.w = w
         self.b = b
