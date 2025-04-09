@@ -1,5 +1,3 @@
-
-
 # AI From Scratch
 
 Building ML models from scratch using Python. (and simple libraries like numpy and math)

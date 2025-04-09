@@ -1,5 +1,3 @@
-
-
 import numpy as np
 
 class CrossValidate:
@@ -26,4 +24,3 @@ class CrossValidate:
         test_indices = indices[i*fold_size:(i+1)*fold_size]
         train_indices = np.concatenate([indices[:i*fold_size], indices[(i+1)*fold_size:]])
         return x[train_indices], y[train_indices], x[test_indices], y[test_indices]
-    

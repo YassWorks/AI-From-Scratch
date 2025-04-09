@@ -1,5 +1,3 @@
-
-
 import numpy as np
 
 class KMeans:
@@ -53,5 +51,3 @@ class KMeans:
         if verbose:
             print('[INFO]: New "Cluser" column has been added to the data.')
             print('[INFO]: Training has been completed.')
-
-        
