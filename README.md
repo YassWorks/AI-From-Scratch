@@ -11,6 +11,7 @@ This repository includes both supervised learning (regression and classification
 - **LogisticRegression.py**: logistic regression model for binary classification.
 - **KMeans.py**: clustering algorithm for partitioning data into K clusters.
 - **CrossValidation.py**: evaluate the performance of machine learning models.
+- **KNNRegression.py**: k-nearest neighbors regression model for predicting continuous values.
 
 ## Getting started
 
