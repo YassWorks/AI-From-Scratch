@@ -4,3 +4,4 @@ main.py
 PRIVATE_NOTES.md
 .vscode
 .vscode/*
+main*.py

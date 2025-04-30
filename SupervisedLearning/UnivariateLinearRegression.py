@@ -10,8 +10,10 @@ class UnivariateLinearRegression:
         self.lr = lr
 
     @staticmethod
-    def MSE(y, y_hat):
-        return np.mean((y - y_hat) ** 2)
+    def MSE(y_true, y_pred):
+        y_true = np.asarray(y_true)
+        y_pred = np.asarray(y_pred)
+        return np.mean((y_true - y_pred) ** 2)
 
     def train(self, x_train, y_train, max_loss=0.1, verbose=False, max_iters=10000):
         # we must determine w and b so that the loss function is minimized
