@@ -5,3 +5,4 @@ PRIVATE_NOTES.md
 .vscode
 .vscode/*
 main*.py
+*_test.py
