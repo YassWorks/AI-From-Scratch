@@ -12,6 +12,7 @@ This repository includes both supervised learning (regression and classification
 - **KMeans.py**: clustering algorithm for partitioning data into K clusters.
 - **CrossValidation.py**: evaluate the performance of machine learning models.
 - **KNNRegression.py**: k-nearest neighbors regression model for predicting continuous values.
+- **skip_gram_sm.py**: Skip-Gram model for generating word embedding (Naive Softmax version)
 
 ## Getting started
 
