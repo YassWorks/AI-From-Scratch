@@ -41,9 +41,9 @@ class LinearRegression:
     def gradient_descent(self, x_train, y_train, y_hat):
         # derivative of the loss function with respect to w and b
         m = x_train.shape[0]
-        dw = -(2 / m) * np.dot(x_train.T, (y_train - y_hat))
-        db = -(2 / m) * np.sum(y_train - y_hat)
+        dL_dw = -(2 / m) * np.dot(x_train.T, (y_train - y_hat))
+        dL_db = -(2 / m) * np.sum(y_train - y_hat)
 
         # update w and b
-        self.w -= self.lr * dw
-        self.b -= self.lr * db
+        self.w -= self.lr * dL_dw
+        self.b -= self.lr * dL_db
