@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 class UnivariateLinearRegression:
 
     def __init__(self, random_state=0, w=None, b=None, lr=0.1):
@@ -22,14 +23,14 @@ class UnivariateLinearRegression:
         # initialize w and b with random values
         self.w = np.random.randn()
         self.b = np.random.randn()
-        
-        prev_loss = float('inf')
+
+        prev_loss = float("inf")
 
         for _ in range(max_iters):
             y_hat = self.predict(x_train)
             loss = self.MSE(y_train, y_hat)
             if verbose:
-                print('Loss:', loss)
+                print("Loss:", loss)
             if abs(prev_loss - loss) < max_loss:  # Stop if loss change is small
                 break
             prev_loss = loss
@@ -37,7 +38,7 @@ class UnivariateLinearRegression:
 
     def predict(self, x):
         return self.w * x + self.b
-    
+
     def gradient_descent(self, x_train, y_train, y_hat):
         # derivative of the loss function with respect to w and b
         dL_dw = np.mean(x_train * (y_train - y_hat))
@@ -48,6 +49,6 @@ class UnivariateLinearRegression:
         self.b += self.lr * dL_db
 
     def plot(self, x_train, y_train):
-        plt.plot(x_train, y_train, 'o')
-        plt.plot(x_train, self.predict(x_train), 'r')
+        plt.plot(x_train, y_train, "o")
+        plt.plot(x_train, self.predict(x_train), "r")
         plt.show()

@@ -1,5 +1,6 @@
 import numpy as np
 
+
 class KNNRegression:
     def __init__(self, k=3, weighted=False):
         self.k = k
@@ -13,13 +14,13 @@ class KNNRegression:
         y_true = np.asarray(y_true)
         y_pred = np.asarray(y_pred)
         return np.mean((y_true - y_pred) ** 2)
-    
+
     def fit(self, X, y):
         # X: shape (n_samples, n_features)
         # y: shape (n_samples,)
         X = np.asarray(X)
         y = np.asarray(y)
-        
+
         self.X_train = X
         self.y_train = y
 
@@ -36,7 +37,7 @@ class KNNRegression:
         dists = np.linalg.norm(diff, axis=2)  # shape (m, n_train)
 
         # indices of the k nearest neighbors
-        nn_indices = np.argsort(dists, axis=1)[:, :self.k]
+        nn_indices = np.argsort(dists, axis=1)[:, : self.k]
         nn_dists = np.take_along_axis(dists, nn_indices, axis=1)
         nn_targets = self.y_train[nn_indices]
 
